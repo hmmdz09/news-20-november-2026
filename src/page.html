@@ -24,8 +24,8 @@ h1{font-family:Georgia,serif;font-size:62px;line-height:.95;font-weight:900;lett
 .grid .txt{padding:4px 6px 6px}
 .grid h3{font-family:Georgia,serif;font-size:14.5px;line-height:1.06;margin-top:1px}
 .grid p{font-size:11px;line-height:1.2;color:#333;margin-top:2px}
-.foot{display:flex;justify-content:space-between;gap:12px;margin-top:4px;border-top:1px solid #161616;padding-top:4px;font-size:10.4px;color:#444;line-height:1.25}
-.foot .chk{flex:1}
+.foot{display:flex;justify-content:space-between;gap:12px;margin-top:7px;border-top:none;padding-top:0;font-size:10.4px;color:#444;line-height:1.25}
+.foot .chk{flex:1;border:2px solid #c0161c;padding:3px 6px;background:#fff;color:#222}
 .foot .chk b{color:#c0161c}
 .eu{color:#1f4e96}.as{color:#c0161c}.am{color:#6b3fa0}.af{color:#2f7d32}.me{color:#a35a00}.gl{color:#555}.oc{color:#00808a}
 .bot{display:grid;grid-template-columns:260px 1fr;gap:14px;margin-top:7px;border-top:2px solid #161616;padding-top:4px}
@@ -33,7 +33,7 @@ h1{font-family:Georgia,serif;font-size:62px;line-height:.95;font-weight:900;lett
 #map{width:260px;display:block}
 .leg{display:flex;flex-wrap:wrap;gap:2px 9px;font-size:10px;font-weight:700;margin-top:3px}
 .also ol{list-style:none;columns:2;column-gap:14px}
-.also li{font-size:11.4px;line-height:1.32;break-inside:avoid;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.also li{font-size:11.6px;line-height:1.38;break-inside:avoid;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .also li i{display:inline-block;width:15px;height:13px;border-radius:7px;color:#fff;font-style:normal;font-size:8.5px;font-weight:800;text-align:center;line-height:13px;margin-right:3px;vertical-align:1px}
 .also li .s{color:#8a8172;font-size:9.5px}
 .num{display:inline-block;min-width:15px;height:15px;border-radius:8px;color:#fff;font-size:9.5px;font-weight:800;text-align:center;line-height:15px;margin-right:4px;vertical-align:1px;font-style:normal;letter-spacing:0}
@@ -51,10 +51,10 @@ h1{font-family:Georgia,serif;font-size:62px;line-height:.95;font-weight:900;lett
 
 <div class="nums">
   <div><b>3</b>Kyiv bridges hit</div>
-  <div><b>111 + 404</b>missiles + drones</div>
-  <div><b>−3.7%</b>S&amp;P 500</div>
-  <div><b>−14%</b>Nvidia</div>
-  <div><b>−6.2%</b>Taiwan stocks</div>
+  <div><b>9</b>killed across Ukraine</div>
+  <div><b>−3.7%</b>S&amp;P 500 on Friday</div>
+  <div><b>368 runs</b>NZ v India, Wellington</div>
+  <div><b>1,025</b>Argentina country risk</div>
   <div><b>300,000+</b>evacuated, Odisha</div>
 </div>
 
@@ -144,9 +144,9 @@ h1{font-family:Georgia,serif;font-size:62px;line-height:.95;font-weight:900;lett
 
 <div class="bot">
   <div class="mapbox">
-    <div class="hd">Where the top 13 happened</div>
+    <div class="hd">Where the top stories happened</div>
     <svg id="map" viewBox="0 0 300 146" xmlns="http://www.w3.org/2000/svg"></svg>
-    <div class="leg" id="leg"></div>
+    
   </div>
   <div class="also">
     <div class="hd">Also on Friday 20 November · 26 more</div>
@@ -155,8 +155,8 @@ h1{font-family:Georgia,serif;font-size:62px;line-height:.95;font-weight:900;lett
 </div>
 
 <div class="foot">
-  <div class="chk"><b>DATE CHECK.</b> Every story here happened, or was first reported, on Friday 20 November 2026 (local time). Left out as earlier news: Bukele's third-term filing (Thu 19) and Jensen Huang's exit from Nvidia (12 Nov). Not yet: BepiColombo's Mercury orbit entry (due Sat 21).</div>
-  <div class="src">Sources named on each story<br>Original drawings · no photos</div>
+  <div class="chk"><b>DATE CHECK.</b> All happened or were first reported on Fri 20 Nov 2026. Left out as earlier: Bukele's filing (Thu 19), Huang's Nvidia exit (12 Nov). Not yet: BepiColombo at Mercury (Sat 21).</div>
+  <div class="src">Sources on each story<br>Original drawings</div>
 </div>
 <script>
 const R={eu:'#1f4e96',me:'#a35a00',af:'#2f7d32',as:'#c0161c',am:'#6b3fa0',oc:'#00808a',gl:'#666'};
@@ -177,7 +177,7 @@ const pins=[
 [1,30.5,50.4,'eu'],[2,-74,40.7,'gl'],[3,84.9,19.3,'as'],[4,30.7,36.9,'me'],[5,4.35,50.85,'eu'],[6,23.6,50.6,'eu'],[7,127.0,37.6,'as'],[8,-77,38.9,'am'],[9,44.2,32.9,'me'],[10,174.8,-41.3,'oc'],[11,35.6,2.4,'af'],[12,77.2,28.6,'as'],[13,-53.8,-29.1,'am']];
 const briefs=[
 ['eu','Kryvyi Rih','later strike kills a boy, 7, and a medic','Kyiv Indep.',33.4,47.9],
-['eu','Kyiv','Ukraine says it hit 3 Russian missile launchers','Pravda',30.5,50.4],
+['eu','Kyiv','Ukraine says it hit 3 Russian missile launchers','Ukr. Pravda',30.5,50.4],
 
 ['eu','Tallinn','Estonia to shut Russia border; Moscow fumes','Reuters',24.7,59.4],
 ['me','Gaza','Israeli strikes kill 6 despite truce','AFP',34.4,31.5],
@@ -200,17 +200,17 @@ const briefs=[
 ['gl','Film','Hunger Games prequel: $21m in previews','Deadline',null,null]];
 const m=document.getElementById('map');let h='<rect width="300" height="146" fill="#1b2a44"/>';
 for(const g of land)h+='<polygon points="'+g.map(p=>P(p[0],p[1]).join(',')).join(' ')+'" fill="#d9cfb6"/>';
-const all=pins;
+const all=pins.filter(p=>p[3]!=='gl');
 const pts=all.map(p=>{const [x,y]=P(p[1],p[2]);return {n:p[0],c:p[3],x0:+x,y0:+y,x:+x,y:+y,r:7.2};});
 for(let it=0;it<400;it++){for(let i=0;i<pts.length;i++)for(let j=i+1;j<pts.length;j++){const A=pts[i],B=pts[j];let dx=B.x-A.x,dy=B.y-A.y;let d=Math.hypot(dx,dy)||0.01;const m=A.r+B.r+0.8;if(d<m){const f=(m-d)/2;dx/=d;dy/=d;A.x-=dx*f;A.y-=dy*f;B.x+=dx*f;B.y+=dy*f;}}
 for(const p of pts){p.x+=(p.x0-p.x)*0.02;p.y+=(p.y0-p.y)*0.02;p.x=Math.max(p.r,Math.min(300-p.r,p.x));p.y=Math.max(p.r,Math.min(146-p.r,p.y));}}
 for(const p of pts)if(Math.hypot(p.x-p.x0,p.y-p.y0)>2)h+='<line x1="'+p.x0+'" y1="'+p.y0+'" x2="'+p.x.toFixed(1)+'" y2="'+p.y.toFixed(1)+'" stroke="#fff" stroke-width=".6" opacity=".8"/><circle cx="'+p.x0+'" cy="'+p.y0+'" r="1.2" fill="#fff"/>';
-for(const p of pts.slice().reverse()){h+='<circle cx="'+p.x.toFixed(1)+'" cy="'+p.y.toFixed(1)+'" r="'+p.r+'" fill="'+(R[p.c]||'#555')+'" stroke="#fff" stroke-width="0.8"/><text x="'+p.x.toFixed(1)+'" y="'+(p.y+2.7).toFixed(1)+'" font-size="'+8+'" font-family="Segoe UI,Arial" font-weight="800" fill="#fff" text-anchor="middle">'+p.n+'</text>';}
+for(const p of pts.slice().reverse()){h+='<circle cx="'+p.x.toFixed(1)+'" cy="'+p.y.toFixed(1)+'" r="'+p.r+'" fill="'+(R[p.c]||'#555')+'" stroke="#fff" stroke-width="0.8"/><text x="'+p.x.toFixed(1)+'" y="'+(p.y+(p.r>5?2.4:1.8)).toFixed(1)+'" font-size="'+(p.r>5?7:5.2)+'" font-family="Segoe UI,Arial" font-weight="800" fill="#fff" text-anchor="middle">'+p.n+'</text>';}
 m.innerHTML=h;
 const cnt={};for(const r of pins.map(p=>p[3]).concat(briefs.map(b=>b[0])))cnt[r]=(cnt[r]||0)+1;
 const nm={eu:'Europe',me:'Middle East',af:'Africa',as:'Asia',am:'Americas',oc:'Oceania',gl:'Global'};
 document.getElementById('regbar').innerHTML=Object.keys(nm).filter(k=>cnt[k]).map(k=>'<div style="flex:'+cnt[k]+';background:'+(R[k]||'#666')+'">'+nm[k]+' '+cnt[k]+'</div>').join('');
-document.getElementById('leg').innerHTML=Object.keys(nm).filter(k=>cnt[k]).map(k=>'<span class="'+k+'">■ '+nm[k]+' '+cnt[k]+'</span>').join('');
+void Object.keys(nm).filter(k=>cnt[k]).map(k=>'<span class="'+k+'">■ '+nm[k]+' '+cnt[k]+'</span>').join('');
 document.querySelector('.also .hd').textContent='Also on Friday 20 November · '+briefs.length+' more';
 document.querySelector('.top span:last-child').textContent=(13+briefs.length)+' stories · 6 regions + global · every one from Friday 20 November 2026';
 const cs=['Reuters, Kyiv Independent','AP, Reuters, CNBC','IMD, The Hindu','Al Jazeera, DW','Reuters','Kyiv Independent','Yonhap, Korea Herald','CNBC','Al Jazeera','AP','Business Daily','Al Jazeera','France 24'];
