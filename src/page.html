@@ -3,16 +3,16 @@
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
 html,body{width:1024px;height:1024px;overflow:hidden}
-body{background:#f6f1e6;color:#161616;font-family:"Segoe UI",Arial,sans-serif;padding:16px 18px 10px}
+body{background:#f6f1e6;color:#161616;font-family:"Segoe UI",Arial,sans-serif;padding:10px 16px 6px}
 .serif{font-family:Georgia,"Times New Roman",serif}
 .top{display:flex;justify-content:space-between;align-items:center;font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;border-bottom:2px solid #161616;padding-bottom:4px}
 .top .red{color:#c0161c}
-h1{font-family:Georgia,serif;font-size:58px;line-height:1;font-weight:900;letter-spacing:-.01em;margin-top:6px}
+h1{font-family:Georgia,serif;font-size:52px;line-height:1;font-weight:900;letter-spacing:-.01em;margin-top:6px}
 .dek{font-family:Georgia,serif;font-style:italic;font-size:17px;margin-top:4px;color:#333}
 .nums{display:grid;grid-template-columns:repeat(6,1fr);gap:8px;margin-top:8px;border-top:1px solid #161616;border-bottom:1px solid #161616;padding:5px 0}
-.nums div{border-left:3px solid #c0161c;padding-left:6px;font-size:11px;line-height:1.15;color:#333}
-.nums b{display:block;font-family:Georgia,serif;font-size:22px;color:#161616;line-height:1.05}
-.lead{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;margin-top:9px}
+.nums div{border-left:3px solid #c0161c;padding-left:6px;font-size:10.6px;line-height:1.1;color:#333}
+.nums b{display:block;font-family:Georgia,serif;font-size:20px;color:#161616;line-height:1.05}
+.lead{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;margin-top:7px}
 .card{background:#fff;border:1px solid #d8cfbd;display:flex;flex-direction:column}
 .card svg rect.fl{stroke:#999;stroke-width:1}
 .card svg{display:block;width:100%}
@@ -20,23 +20,28 @@ h1{font-family:Georgia,serif;font-size:58px;line-height:1;font-weight:900;letter
 .kick{font-size:10px;font-weight:800;letter-spacing:.07em;text-transform:uppercase}
 .lead h2{font-family:Georgia,serif;font-size:19.5px;line-height:1.08;margin-top:2px}
 .lead p{font-size:11.5px;line-height:1.25;margin-top:3px;color:#2c2c2c}
-.grid{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;margin-top:9px}
+.grid{display:grid;grid-template-columns:repeat(5,1fr);gap:7px;margin-top:7px}
 .grid .txt{padding:4px 6px 6px}
 .grid h3{font-family:Georgia,serif;font-size:14px;line-height:1.1;margin-top:1px}
 .grid p{font-size:11px;line-height:1.2;color:#333;margin-top:2px}
-.also{margin-top:9px;border-top:2px solid #161616;padding-top:4px}
-.also .hd{font-size:11px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#c0161c}
-.also ul{list-style:none;columns:3;column-gap:16px;margin-top:3px}
-.also li{font-size:11.2px;line-height:1.3;break-inside:avoid;padding-left:9px;position:relative}
-.also li:before{content:"";position:absolute;left:0;top:6px;width:5px;height:5px;background:#c0161c}
-.also li b{font-weight:700}
 .foot{display:flex;justify-content:space-between;gap:12px;margin-top:6px;border-top:1px solid #161616;padding-top:4px;font-size:10.4px;color:#444;line-height:1.25}
 .foot .chk{flex:1}
 .foot .chk b{color:#c0161c}
 .eu{color:#1f4e96}.as{color:#c0161c}.am{color:#6b3fa0}.af{color:#2f7d32}.me{color:#a35a00}.gl{color:#555}.oc{color:#00808a}
+.bot{display:grid;grid-template-columns:300px 1fr;gap:14px;margin-top:7px;border-top:2px solid #161616;padding-top:4px}
+.hd{font-size:11px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#c0161c;margin-bottom:3px}
+#map{width:300px;display:block}
+.leg{display:flex;flex-wrap:wrap;gap:2px 9px;font-size:10px;font-weight:700;margin-top:3px}
+.also ol{list-style:none;columns:2;column-gap:14px}
+.also li{font-size:11px;line-height:1.3;break-inside:avoid;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.also li i{display:inline-block;width:15px;height:13px;border-radius:7px;color:#fff;font-style:normal;font-size:8.5px;font-weight:800;text-align:center;line-height:13px;margin-right:3px;vertical-align:1px}
+.also li .s{color:#8a8172;font-size:9.5px}
+.num{display:inline-block;min-width:15px;height:15px;border-radius:8px;color:#fff;font-size:9.5px;font-weight:800;text-align:center;line-height:15px;margin-right:4px;vertical-align:1px;font-style:normal;letter-spacing:0}
+.srcl{color:#8a8172;font-weight:600;letter-spacing:0;text-transform:none}
+.foot .src{text-align:right;white-space:nowrap}
 </style></head>
 <body>
-<div class="top"><span class="red">The world in one day</span><span>World news · 33 stories · 6 continents · all from Friday</span></div>
+<div class="top"><span class="red">The world in one day</span><span>World news · 39 stories · 6 continents · all from this Friday</span></div>
 <h1>Friday 20 November 2026</h1>
 <div class="dek">Russia hits three Kyiv bridges · AI rout drives Wall Street into correction · Cyclone Akvan lands in India · COP31 in overtime</div>
 
@@ -45,14 +50,14 @@ h1{font-family:Georgia,serif;font-size:58px;line-height:1;font-weight:900;letter
   <div><b>111 + 404</b>missiles and drones fired at Ukraine</div>
   <div><b>−3.7%</b>S&amp;P 500; Nasdaq −5.3%, now down for 2026</div>
   <div><b>−14%</b>Nvidia, on a report of an SEC accounting probe</div>
-  <div><b>−6.2%</b>Taiwan; its worst week since 1991</div>
+  <div><b>−6.2%</b>Taiwan on Friday; worst week since 1991</div>
   <div><b>300,000+</b>moved to shelters before Akvan</div>
 </div>
 
 <div class="lead">
   <!-- 1 KYIV -->
   <div class="card">
-    <svg viewBox="0 0 320 150" xmlns="http://www.w3.org/2000/svg">
+    <svg viewBox="0 0 320 136" preserveAspectRatio="xMidYMid slice" style="height:128px" xmlns="http://www.w3.org/2000/svg">
       <rect width="320" height="150" fill="#16213e"/>
       <circle cx="270" cy="28" r="12" fill="#e8e4d0" opacity=".8"/>
       <g fill="#0d1428"><rect x="0" y="62" width="22" height="40"/><rect x="24" y="48" width="18" height="54"/><rect x="44" y="70" width="26" height="32"/><rect x="250" y="56" width="20" height="46"/><rect x="272" y="68" width="24" height="34"/><rect x="298" y="50" width="22" height="52"/></g>
@@ -61,14 +66,14 @@ h1{font-family:Georgia,serif;font-size:58px;line-height:1;font-weight:900;letter
       <g fill="#c9c2a8"><rect x="40" y="100" width="5" height="22"/><rect x="110" y="100" width="5" height="22"/><rect x="180" y="100" width="5" height="22"/><rect x="250" y="100" width="5" height="22"/></g>
       <g stroke="#ff9b3d" stroke-width="2" stroke-dasharray="5 4" fill="none" opacity=".9"><path d="M300 0 Q230 40 150 92"/><path d="M320 20 Q260 50 78 92"/><path d="M250 0 Q240 60 222 92"/></g>
       <g><circle cx="78" cy="94" r="14" fill="#ff6a00" opacity=".85"/><circle cx="78" cy="94" r="7" fill="#ffd34d"/><circle cx="150" cy="94" r="16" fill="#ff6a00" opacity=".85"/><circle cx="150" cy="94" r="8" fill="#ffd34d"/><circle cx="222" cy="94" r="13" fill="#ff6a00" opacity=".85"/><circle cx="222" cy="94" r="6" fill="#ffd34d"/></g>
-      <rect x="8" y="8" width="118" height="22" fill="#c0161c"/><text x="14" y="24" font-family="Segoe UI,Arial" font-weight="800" font-size="13" fill="#fff">3 BRIDGES HIT</text>
-      <text x="10" y="140" font-family="Segoe UI,Arial" font-weight="700" font-size="12" fill="#fff">KYIV · DNIPRO RIVER</text>
+      <rect x="8" y="10" width="118" height="22" fill="#c0161c"/><text x="14" y="26" font-family="Segoe UI,Arial" font-weight="800" font-size="13" fill="#fff">3 BRIDGES HIT</text>
+      <text x="10" y="124" font-family="Segoe UI,Arial" font-weight="700" font-size="12" fill="#fff">KYIV · DNIPRO RIVER</text>
     </svg>
     <div class="txt"><div class="kick eu">Ukraine · War</div><h2>Russia's mass strike hits three Kyiv bridges</h2><p>At least 9 killed across Ukraine, 2 at a Lviv rail station; power and water cut in Kyiv. Hours earlier, Putin vowed revenge for strikes on the Crimean Bridge.</p></div>
   </div>
   <!-- 2 MARKETS -->
   <div class="card">
-    <svg viewBox="0 0 320 150" xmlns="http://www.w3.org/2000/svg">
+    <svg viewBox="0 0 320 136" preserveAspectRatio="xMidYMid slice" style="height:128px" xmlns="http://www.w3.org/2000/svg">
       <rect width="320" height="150" fill="#0f1b14"/>
       <g stroke="#23402f" stroke-width="1"><path d="M0 40H320M0 75H320M0 110H320"/></g>
       <polyline points="10,30 50,38 85,34 120,55 150,50 185,78 215,72 250,104 280,118 300,130" fill="none" stroke="#ff4747" stroke-width="4"/>
@@ -76,16 +81,16 @@ h1{font-family:Georgia,serif;font-size:58px;line-height:1;font-weight:900;letter
       <g font-family="Segoe UI,Arial" font-weight="800">
         <text x="12" y="62" font-size="13" fill="#bfe8cf">S&amp;P 500</text><text x="12" y="80" font-size="20" fill="#ff5c5c">−3.7%</text>
         <text x="96" y="100" font-size="13" fill="#bfe8cf">NVIDIA</text><text x="96" y="118" font-size="20" fill="#ff5c5c">−14%</text>
-        <text x="182" y="30" font-size="13" fill="#bfe8cf">TAIWAN</text><text x="182" y="48" font-size="20" fill="#ff5c5c">−6.2%</text>
-        <text x="252" y="30" font-size="13" fill="#bfe8cf">NIKKEI</text><text x="252" y="48" font-size="20" fill="#ff5c5c">−5.1%</text>
+        <text x="182" y="44" font-size="13" fill="#bfe8cf">TAIWAN</text><text x="182" y="62" font-size="20" fill="#ff5c5c">−6.2%</text>
+        <text x="254" y="44" font-size="13" fill="#bfe8cf">NIKKEI</text><text x="254" y="62" font-size="20" fill="#ff5c5c">−5.1%</text>
       </g>
-      <rect x="8" y="128" width="148" height="18" fill="#c0161c"/><text x="13" y="141" font-family="Segoe UI,Arial" font-weight="800" font-size="11.5" fill="#fff">AI SELL-OFF · FRIDAY</text>
+      <rect x="8" y="8" width="148" height="18" fill="#c0161c"/><text x="13" y="21" font-family="Segoe UI,Arial" font-weight="800" font-size="11.5" fill="#fff">AI SELL-OFF · FRIDAY</text>
     </svg>
     <div class="txt"><div class="kick gl">Global · Markets</div><h2>AI rout pushes Wall Street into a correction</h2><p>Nvidia fell 14% after Reuters reported an SEC probe of its accounting. Asia led the slide: Taiwan −6.2%, Seoul −5.2%, Tokyo −5.1%.</p></div>
   </div>
   <!-- 3 CYCLONE -->
   <div class="card">
-    <svg viewBox="0 0 320 150" xmlns="http://www.w3.org/2000/svg">
+    <svg viewBox="0 0 320 136" preserveAspectRatio="xMidYMid slice" style="height:128px" xmlns="http://www.w3.org/2000/svg">
       <rect width="320" height="150" fill="#9fc9e0"/>
       <path d="M0 0 H170 C160 30 150 45 132 62 C118 76 100 86 84 104 C70 120 58 136 50 150 H0 Z" fill="#d8c79a"/>
       <path d="M170 0 C160 30 150 45 132 62 C118 76 100 86 84 104 C70 120 58 136 50 150" fill="none" stroke="#8a7a52" stroke-width="2"/>
@@ -100,66 +105,110 @@ h1{font-family:Georgia,serif;font-size:58px;line-height:1;font-weight:900;letter
       <path d="M190 112 Q150 100 126 70" fill="none" stroke="#c0161c" stroke-width="2.5" stroke-dasharray="6 4"/>
       <circle cx="124" cy="67" r="6" fill="#c0161c"/>
       <text x="62" y="60" font-family="Segoe UI,Arial" font-weight="800" font-size="12" fill="#3b321c">GOPALPUR</text>
-      <text x="16" y="24" font-family="Segoe UI,Arial" font-weight="800" font-size="13" fill="#3b321c">ODISHA, INDIA</text>
-      <text x="228" y="144" font-family="Segoe UI,Arial" font-weight="700" font-size="11" fill="#1d4a66">BAY OF BENGAL</text>
-      <rect x="200" y="8" width="112" height="22" fill="#c0161c"/><text x="206" y="24" font-family="Segoe UI,Arial" font-weight="800" font-size="12.5" fill="#fff">AKVAN LANDS</text>
+      <text x="16" y="26" font-family="Segoe UI,Arial" font-weight="800" font-size="13" fill="#3b321c">ODISHA, INDIA</text>
+      <text x="226" y="124" font-family="Segoe UI,Arial" font-weight="700" font-size="11" fill="#1d4a66">BAY OF BENGAL</text>
+      <rect x="200" y="10" width="112" height="22" fill="#c0161c"/><text x="206" y="26" font-family="Segoe UI,Arial" font-weight="800" font-size="12.5" fill="#fff">AKVAN LANDS</text>
     </svg>
     <div class="txt"><div class="kick as">India · Weather</div><h2>Cyclone Akvan crosses the coast near Gopalpur</h2><p>It came ashore in the morning, then weakened. More than 300,000 people were moved to shelters in Odisha. No deaths were reported.</p></div>
   </div>
 </div>
 
 <div class="grid">
-  <div class="card"><svg viewBox="0 0 190 70"><rect width="190" height="70" fill="#d9ecd9"/><circle cx="60" cy="35" r="24" fill="#4f8fc0"/><path d="M44 26c8-6 14 2 20-2s8 8 14 6M42 42c10 4 16-4 24 2" stroke="#3d7a3d" stroke-width="5" fill="none"/><circle cx="130" cy="35" r="20" fill="#fff" stroke="#333" stroke-width="3"/><path d="M130 35V22M130 35l9 6" stroke="#c0161c" stroke-width="3"/><text x="98" y="66" font-family="Segoe UI" font-weight="800" font-size="10" fill="#333">OVERTIME</text></svg>
-    <div class="txt"><div class="kick me">Antalya · Climate</div><h3>COP31 talks run past deadline, no deal</h3><p>The draft no longer mentions fossil fuels.</p></div></div>
-  <div class="card"><svg viewBox="0 0 190 70"><rect width="190" height="70" fill="#e9eef7"/><g transform="translate(22,14)"><rect width="56" height="38" fill="#1f3f8f"/><path d="M0 0L56 38M56 0L0 38" stroke="#fff" stroke-width="7"/><path d="M0 0L56 38M56 0L0 38" stroke="#c8102e" stroke-width="3"/><path d="M28 0V38M0 19H56" stroke="#fff" stroke-width="10"/><path d="M28 0V38M0 19H56" stroke="#c8102e" stroke-width="6"/></g><g transform="translate(112,14)"><rect width="56" height="38" fill="#1f3f8f"/><g fill="#ffd700"><circle cx="28" cy="7" r="2.5"/><circle cx="38" cy="10" r="2.5"/><circle cx="43" cy="19" r="2.5"/><circle cx="38" cy="28" r="2.5"/><circle cx="28" cy="31" r="2.5"/><circle cx="18" cy="28" r="2.5"/><circle cx="13" cy="19" r="2.5"/><circle cx="18" cy="10" r="2.5"/></g></g><path d="M82 33h26" stroke="#333" stroke-width="3"/><path d="M104 28l6 5-6 5M86 28l-6 5 6 5" fill="none" stroke="#333" stroke-width="3"/></svg>
+  <div class="card"><svg viewBox="0 0 190 70" preserveAspectRatio="xMidYMid slice" style="height:60px"><rect width="190" height="70" fill="#d9ecd9"/><circle cx="60" cy="35" r="24" fill="#4f8fc0"/><path d="M44 26c8-6 14 2 20-2s8 8 14 6M42 42c10 4 16-4 24 2" stroke="#3d7a3d" stroke-width="5" fill="none"/><circle cx="130" cy="30" r="17" fill="#fff" stroke="#333" stroke-width="3"/><path d="M130 30V19M130 30l8 5" stroke="#c0161c" stroke-width="3"/><text x="102" y="60" font-family="Segoe UI" font-weight="800" font-size="10" fill="#333">OVERTIME</text></svg>
+    <div class="txt"><div class="kick me">Antalya · Climate</div><h3>COP31 talks run past deadline, no deal</h3><p>Nearly 200 nations split over fossil fuels.</p></div></div>
+  <div class="card"><svg viewBox="0 0 190 70" preserveAspectRatio="xMidYMid slice" style="height:60px"><rect width="190" height="70" fill="#e9eef7"/><g transform="translate(22,14)"><rect width="56" height="38" fill="#1f3f8f"/><path d="M0 0L56 38M56 0L0 38" stroke="#fff" stroke-width="7"/><path d="M0 0L56 38M56 0L0 38" stroke="#c8102e" stroke-width="3"/><path d="M28 0V38M0 19H56" stroke="#fff" stroke-width="10"/><path d="M28 0V38M0 19H56" stroke="#c8102e" stroke-width="6"/></g><g transform="translate(112,14)"><rect width="56" height="38" fill="#1f3f8f"/><g fill="#ffd700"><circle cx="28" cy="7" r="2.5"/><circle cx="38" cy="10" r="2.5"/><circle cx="43" cy="19" r="2.5"/><circle cx="38" cy="28" r="2.5"/><circle cx="28" cy="31" r="2.5"/><circle cx="18" cy="28" r="2.5"/><circle cx="13" cy="19" r="2.5"/><circle cx="18" cy="10" r="2.5"/></g></g><path d="M82 33h26" stroke="#333" stroke-width="3"/><path d="M104 28l6 5-6 5M86 28l-6 5 6 5" fill="none" stroke="#333" stroke-width="3"/></svg>
     <div class="txt"><div class="kick eu">Brussels · Diplomacy</div><h3>UK and EU seal food and youth-travel deals</h3><p>A "reset" summit; other issues pushed back.</p></div></div>
-  <div class="card"><svg viewBox="0 0 190 70"><rect width="190" height="70" fill="#fff"/><rect x="0.5" y="0.5" width="189" height="35" fill="#fff" stroke="#bbb"/><rect y="35" width="190" height="35" fill="#dc143c"/><g transform="translate(70,30) rotate(-20)"><rect x="0" y="-5" width="54" height="10" rx="5" fill="#555"/><path d="M54 -5l12 5-12 5z" fill="#333"/><path d="M4 -5l-6 -8h8zM4 5l-6 8h8z" fill="#333"/></g><text x="8" y="22" font-family="Segoe UI" font-weight="800" font-size="11" fill="#333">POLAND</text><text x="120" y="62" font-family="Segoe UI" font-weight="800" font-size="10.5" fill="#fff">2 × KH-101</text></svg>
+  <div class="card"><svg viewBox="0 0 190 70" preserveAspectRatio="xMidYMid slice" style="height:60px"><rect width="190" height="70" fill="#fff"/><rect x="0.5" y="0.5" width="189" height="35" fill="#fff" stroke="#bbb"/><rect y="35" width="190" height="35" fill="#dc143c"/><g transform="translate(70,30) rotate(-20)"><rect x="0" y="-5" width="54" height="10" rx="5" fill="#555"/><path d="M54 -5l12 5-12 5z" fill="#333"/><path d="M4 -5l-6 -8h8zM4 5l-6 8h8z" fill="#333"/></g><text x="8" y="22" font-family="Segoe UI" font-weight="800" font-size="11" fill="#333">POLAND</text><text x="120" y="62" font-family="Segoe UI" font-weight="800" font-size="10.5" fill="#fff">2 × KH-101</text></svg>
     <div class="txt"><div class="kick eu">Poland · Security</div><h3>Two Russian missiles and a drone fall in Poland</h3><p>Warsaw calls it a "provocation"; no one hurt.</p></div></div>
-  <div class="card"><svg viewBox="0 0 190 70"><rect width="190" height="70" fill="#eef2f7"/><rect x="0" y="0" width="60" height="70" fill="#0072ce"/><rect x="0" y="23" width="60" height="24" fill="#111"/><rect x="0" y="47" width="60" height="23" fill="#fff"/><g stroke="#333" stroke-width="4"><path d="M80 18V66M100 18V66"/></g><rect x="78" y="34" width="100" height="10" fill="#c0161c"/><rect x="78" y="34" width="100" height="10" fill="url(#s)"/><text x="108" y="26" font-family="Segoe UI" font-weight="800" font-size="11" fill="#333">CLOSED</text><text x="114" y="62" font-family="Segoe UI" font-weight="700" font-size="10" fill="#333">RUSSIA →</text></svg>
+  <div class="card"><svg viewBox="0 0 190 70" preserveAspectRatio="xMidYMid slice" style="height:60px"><rect width="190" height="70" fill="#eef2f7"/><rect x="0" y="0" width="60" height="70" fill="#0072ce"/><rect x="0" y="23" width="60" height="24" fill="#111"/><rect x="0" y="47" width="60" height="23" fill="#fff"/><g stroke="#333" stroke-width="4"><path d="M80 18V66M100 18V66"/></g><rect x="78" y="34" width="100" height="10" fill="#c0161c"/><rect x="78" y="34" width="100" height="10" fill="url(#s)"/><text x="108" y="26" font-family="Segoe UI" font-weight="800" font-size="11" fill="#333">CLOSED</text><text x="114" y="62" font-family="Segoe UI" font-weight="700" font-size="10" fill="#333">RUSSIA →</text></svg>
     <div class="txt"><div class="kick eu">Tallinn · Security</div><h3>Estonia moves to shut its border with Russia</h3><p>Moscow condemns a "new Iron Curtain".</p></div></div>
-  <div class="card"><svg viewBox="0 0 190 70"><rect width="190" height="70" fill="#e8ecf4"/><g transform="translate(26,12)"><rect width="44" height="48" rx="3" fill="#2d3a55"/><g fill="#7fd1ff"><rect x="6" y="6" width="32" height="4"/><rect x="6" y="14" width="32" height="4"/><rect x="6" y="22" width="32" height="4"/><rect x="6" y="30" width="32" height="4"/></g></g><g transform="translate(118,12)"><circle cx="22" cy="24" r="22" fill="#c0161c"/><rect x="6" y="20" width="32" height="8" fill="#fff"/></g><text x="74" y="40" font-family="Segoe UI" font-weight="800" font-size="16" fill="#333">→</text></svg>
+  <div class="card"><svg viewBox="0 0 190 70" preserveAspectRatio="xMidYMid slice" style="height:60px"><rect width="190" height="70" fill="#e8ecf4"/><g transform="translate(26,12)"><rect width="44" height="48" rx="3" fill="#2d3a55"/><g fill="#7fd1ff"><rect x="6" y="6" width="32" height="4"/><rect x="6" y="14" width="32" height="4"/><rect x="6" y="22" width="32" height="4"/><rect x="6" y="30" width="32" height="4"/></g></g><g transform="translate(118,12)"><circle cx="22" cy="24" r="22" fill="#c0161c"/><rect x="6" y="20" width="32" height="8" fill="#fff"/></g><text x="74" y="40" font-family="Segoe UI" font-weight="800" font-size="16" fill="#333">→</text></svg>
     <div class="txt"><div class="kick am">Washington · Tech</div><h3>Trump threatens US firms building data centres abroad</h3><p>He promises a "tremendous tax".</p></div></div>
 
-  <div class="card"><svg viewBox="0 0 190 70"><rect width="190" height="70" fill="#efe3c8"/><path d="M0 56H190" stroke="#c9b27e" stroke-width="20"/><g transform="translate(30,30)"><rect width="60" height="20" rx="3" fill="#5b6b3a"/><rect x="40" y="-10" width="20" height="14" fill="#5b6b3a"/><circle cx="12" cy="22" r="6" fill="#222"/><circle cx="48" cy="22" r="6" fill="#222"/></g><g transform="translate(110,30)"><rect width="60" height="20" rx="3" fill="#5b6b3a"/><rect x="40" y="-10" width="20" height="14" fill="#5b6b3a"/><circle cx="12" cy="22" r="6" fill="#222"/><circle cx="48" cy="22" r="6" fill="#222"/></g><text x="8" y="14" font-family="Segoe UI" font-weight="800" font-size="10.5" fill="#333">JURF AL-SAKHAR</text></svg>
+  <div class="card"><svg viewBox="0 0 190 70" preserveAspectRatio="xMidYMid slice" style="height:60px"><rect width="190" height="70" fill="#efe3c8"/><path d="M0 56H190" stroke="#c9b27e" stroke-width="20"/><g transform="translate(30,30)"><rect width="60" height="20" rx="3" fill="#5b6b3a"/><rect x="40" y="-10" width="20" height="14" fill="#5b6b3a"/><circle cx="12" cy="22" r="6" fill="#222"/><circle cx="48" cy="22" r="6" fill="#222"/></g><g transform="translate(110,30)"><rect width="60" height="20" rx="3" fill="#5b6b3a"/><rect x="40" y="-10" width="20" height="14" fill="#5b6b3a"/><circle cx="12" cy="22" r="6" fill="#222"/><circle cx="48" cy="22" r="6" fill="#222"/></g><text x="8" y="17" font-family="Segoe UI" font-weight="800" font-size="10.5" fill="#333">JURF AL-SAKHAR</text></svg>
     <div class="txt"><div class="kick me">Iraq · Security</div><h3>Iraqi forces enter a Kataib Hezbollah stronghold</h3><p>First time in 12 years, after a deal.</p></div></div>
-  <div class="card"><svg viewBox="0 0 190 70"><rect width="190" height="70" fill="#f3efe6"/><rect x="0" y="0" width="63" height="8" fill="#009246"/><rect x="63" y="0" width="64" height="8" fill="#fff"/><rect x="127" y="0" width="63" height="8" fill="#ce2b37"/><g fill="#3a3a3a"><circle cx="24" cy="36" r="7"/><rect x="16" y="44" width="16" height="26" rx="4"/><circle cx="56" cy="34" r="7"/><rect x="48" y="42" width="16" height="28" rx="4"/><circle cx="134" cy="36" r="7"/><rect x="126" y="44" width="16" height="26" rx="4"/><circle cx="166" cy="34" r="7"/><rect x="158" y="42" width="16" height="28" rx="4"/></g><rect x="70" y="18" width="52" height="22" fill="#c0161c"/><path d="M96 40V66" stroke="#3a3a3a" stroke-width="3"/><text x="73" y="33" font-family="Segoe UI" font-weight="800" font-size="10" fill="#fff">SCIOPERO</text></svg>
+  <div class="card"><svg viewBox="0 0 190 70" preserveAspectRatio="xMidYMid slice" style="height:60px"><rect width="190" height="70" fill="#f3efe6"/><rect x="0" y="0" width="63" height="8" fill="#009246"/><rect x="63" y="0" width="64" height="8" fill="#fff"/><rect x="127" y="0" width="63" height="8" fill="#ce2b37"/><g fill="#3a3a3a"><circle cx="24" cy="36" r="7"/><rect x="16" y="44" width="16" height="26" rx="4"/><circle cx="56" cy="34" r="7"/><rect x="48" y="42" width="16" height="28" rx="4"/><circle cx="134" cy="36" r="7"/><rect x="126" y="44" width="16" height="26" rx="4"/><circle cx="166" cy="34" r="7"/><rect x="158" y="42" width="16" height="28" rx="4"/></g><rect x="70" y="18" width="52" height="22" fill="#c0161c"/><path d="M96 40V66" stroke="#3a3a3a" stroke-width="3"/><text x="73" y="33" font-family="Segoe UI" font-weight="800" font-size="10" fill="#fff">SCIOPERO</text></svg>
     <div class="txt"><div class="kick eu">Italy · Labour</div><h3>General strike over wages and the budget</h3><p>Marches in more than 100 cities.</p></div></div>
-  <div class="card"><svg viewBox="0 0 190 70"><rect width="190" height="70" fill="#f4e3c2"/><path d="M0 60H190" stroke="#c99b5a" stroke-width="20"/><g stroke="#333" stroke-width="3" fill="none"><path d="M80 60L95 8L110 60M85 42H105M89 28H101"/></g><rect x="120" y="44" width="40" height="14" fill="#555"/><rect x="0" y="0" width="40" height="8" fill="#000"/><rect x="0" y="8" width="40" height="8" fill="#bb0000"/><rect x="0" y="16" width="40" height="8" fill="#006600"/><text x="122" y="38" font-family="Segoe UI" font-weight="800" font-size="10.5" fill="#333">TURKANA</text></svg>
+  <div class="card"><svg viewBox="0 0 190 70" preserveAspectRatio="xMidYMid slice" style="height:60px"><rect width="190" height="70" fill="#f4e3c2"/><path d="M0 60H190" stroke="#c99b5a" stroke-width="20"/><g stroke="#333" stroke-width="3" fill="none"><path d="M80 60L95 8L110 60M85 42H105M89 28H101"/></g><rect x="120" y="44" width="40" height="14" fill="#555"/><rect x="0" y="0" width="40" height="8" fill="#000"/><rect x="0" y="8" width="40" height="8" fill="#bb0000"/><rect x="0" y="16" width="40" height="8" fill="#006600"/><text x="122" y="38" font-family="Segoe UI" font-weight="800" font-size="10.5" fill="#333">TURKANA</text></svg>
     <div class="txt"><div class="kick af">Kenya · Energy</div><h3>Kenya starts drilling for its Turkana oil</h3><p>First crude is due on 1 December.</p></div></div>
-  <div class="card"><svg viewBox="0 0 190 70"><rect width="190" height="70" fill="#eef4ec"/><g transform="translate(14,16)"><rect width="54" height="36" fill="#01411c"/><rect width="14" height="36" fill="#fff"/><circle cx="36" cy="18" r="10" fill="#fff"/><circle cx="40" cy="15" r="9" fill="#01411c"/></g><g transform="translate(122,16)"><rect width="54" height="12" fill="#ff9933"/><rect y="12" width="54" height="12" fill="#fff"/><rect y="24" width="54" height="12" fill="#138808"/><circle cx="27" cy="18" r="4" fill="none" stroke="#000080" stroke-width="1.5"/></g><path d="M72 34H118" stroke="#333" stroke-width="2.5" stroke-dasharray="4 3"/><text x="74" y="62" font-family="Segoe UI" font-weight="800" font-size="10" fill="#333">NEW DELHI</text></svg>
+  <div class="card"><svg viewBox="0 0 190 70" preserveAspectRatio="xMidYMid slice" style="height:60px"><rect width="190" height="70" fill="#eef4ec"/><g transform="translate(14,16)"><rect width="54" height="36" fill="#01411c"/><rect width="14" height="36" fill="#fff"/><circle cx="36" cy="18" r="10" fill="#fff"/><circle cx="40" cy="15" r="9" fill="#01411c"/></g><g transform="translate(122,16)"><rect width="54" height="12" fill="#ff9933"/><rect y="12" width="54" height="12" fill="#fff"/><rect y="24" width="54" height="12" fill="#138808"/><circle cx="27" cy="18" r="4" fill="none" stroke="#000080" stroke-width="1.5"/></g><path d="M72 34H118" stroke="#333" stroke-width="2.5" stroke-dasharray="4 3"/><text x="74" y="62" font-family="Segoe UI" font-weight="800" font-size="10" fill="#333">NEW DELHI</text></svg>
     <div class="txt"><div class="kick as">India · Diplomacy</div><h3>Pakistani minister visits India</h3><p>The first since their 2025 conflict.</p></div></div>
-  <div class="card"><svg viewBox="0 0 190 70"><rect width="190" height="70" fill="#5d6b7a"/><g fill="#2a3440"><path d="M20 60V40l16-12 16 12v20z"/><path d="M70 60V44l14-10 14 10v16z"/><path d="M120 60V38l18-12 18 12v22z"/></g><g stroke="#cfd8e0" stroke-width="2" opacity=".8"><path d="M30 0l-10 30M70 0l-10 30M110 0l-10 30M150 0l-10 30M180 0l-10 30"/></g><path d="M36 26l10-10M140 24l14-12" stroke="#d9c26a" stroke-width="4"/><text x="8" y="14" font-family="Segoe UI" font-weight="800" font-size="10.5" fill="#fff">TUPANCIRETÃ</text></svg>
+  <div class="card"><svg viewBox="0 0 190 70" preserveAspectRatio="xMidYMid slice" style="height:60px"><rect width="190" height="70" fill="#5d6b7a"/><g fill="#2a3440"><path d="M20 60V40l16-12 16 12v20z"/><path d="M70 60V44l14-10 14 10v16z"/><path d="M120 60V38l18-12 18 12v22z"/></g><g stroke="#cfd8e0" stroke-width="2" opacity=".8"><path d="M30 0l-10 30M70 0l-10 30M110 0l-10 30M150 0l-10 30M180 0l-10 30"/></g><path d="M36 26l10-10M140 24l14-12" stroke="#d9c26a" stroke-width="4"/><rect x="4" y="8" width="84" height="15" fill="#2a3440"/><text x="8" y="19" font-family="Segoe UI" font-weight="800" font-size="10.5" fill="#fff">TUPANCIRETÃ</text></svg>
     <div class="txt"><div class="kick am">Brazil · Weather</div><h3>Storm kills 3, wrecks thousands of homes</h3><p>Winds above 100 km/h in the south.</p></div></div>
 </div>
 
-<div class="also">
-  <div class="hd">Also on Friday 20 November</div>
-  <ul>
-    <li><b class="eu">Kryvyi Rih:</b> missile strike kills a boy, 7, and a medic</li>
-    <li><b class="eu">Kyiv:</b> two water-utility workers killed in the strike</li>
-    <li><b class="eu">Crimea:</b> Moscow says Kerch Bridge arch was damaged</li>
-    <li><b class="eu">Kyiv:</b> Ukraine says it hit three Russian missile launchers</li>
-    <li><b class="eu">Europe:</b> STOXX 600 heads for its worst week in over a year</li>
-    <li><b class="me">Gaza:</b> Israeli strikes kill at least 6 despite the ceasefire</li>
-    <li><b class="af">Sudan:</b> army air strikes on RSF bases in Nyala</li>
-    <li><b class="af">Blue Nile:</b> regional government mobilises troops</li>
-    <li><b class="as">Japan:</b> October inflation rises to 2.3%</li>
-    <li><b class="as">Seoul:</b> Kospi ends the week 7.9% lower</li>
-    <li><b class="as">Tokyo:</b> SoftBank shares fall 14%</li>
-    <li><b class="am">Argentina:</b> country risk tops 1,000 as bonds slump</li>
-    <li><b class="am">Brazil:</b> Bolsonaro taken to hospital, his son says</li>
-    <li><b class="am">Mexico:</b> Sheinbaum leads the Revolution Day parade</li>
-    <li><b class="am">US:</b> Trump defends his ties with Putin</li>
-    <li><b class="am">Wall St:</b> Anthropic shares slide again</li>
-    <li><b class="oc">Wellington:</b> New Zealand all out for 368 v India</li>
-    <li><b class="oc">Australia:</b> severe storms lash the east</li>
-    <li><b class="am">Las Vegas:</b> Russell leads a Mercedes 1-2 in practice</li>
-    <li><b class="gl">Film:</b> new Hunger Games takes $21m+ in previews</li>
-  </ul>
+<div class="bot">
+  <div class="mapbox">
+    <div class="hd">Where the top 13 happened</div>
+    <svg id="map" viewBox="0 0 300 146" xmlns="http://www.w3.org/2000/svg"></svg>
+    <div class="leg" id="leg"></div>
+  </div>
+  <div class="also">
+    <div class="hd">Also on Friday 20 November · 26 more</div>
+    <ol id="briefs" start="14"></ol>
+  </div>
 </div>
 
 <div class="foot">
-  <div class="chk"><b>DATE CHECK.</b> Every story here happened, or was first reported, on Friday 20 November 2026. Earlier news left out: Bukele's third-term filing (Thu 19) and Jensen Huang's exit as Nvidia's chief (12 Nov).</div>
-  <div style="text-align:right;white-space:nowrap">Sources: Reuters, AP, AFP, Kyiv Independent,<br>IMD, Al Jazeera, BBC · original drawings</div>
+  <div class="chk"><b>DATE CHECK.</b> Every story here happened, or was first reported, on Friday 20 November 2026 (local time). Left out as earlier news: Bukele's third-term filing (Thu 19) and Jensen Huang's exit from Nvidia (12 Nov). Not yet: BepiColombo's Mercury orbit entry (due Sat 21).</div>
+  <div class="src">Sources named on each story<br>Original drawings · no photos</div>
 </div>
+<script>
+const R={eu:'#1f4e96',me:'#a35a00',af:'#2f7d32',as:'#c0161c',am:'#6b3fa0',oc:'#00808a'};
+const X0=-128,X1=180,Y0=70,Y1=-48,W=300,H=146;const P=(lo,la)=>[((lo-X0)/(X1-X0)*W).toFixed(1),((Y0-la)/(Y0-Y1)*H).toFixed(1)];
+const land=[
+[[-168,66],[-140,70],[-95,72],[-75,62],[-60,50],[-70,43],[-80,32],[-81,25],[-97,26],[-105,20],[-90,15],[-83,9],[-78,8],[-100,18],[-110,24],[-117,32],[-125,42],[-125,50],[-140,60],[-165,60]],
+[[-55,82],[-25,82],[-20,70],[-45,60],[-55,68]],
+[[-78,8],[-60,10],[-50,0],[-35,-6],[-40,-22],[-58,-38],[-68,-55],[-75,-50],[-71,-30],[-80,-5]],
+[[-10,36],[-9,43],[-2,48],[5,53],[8,57],[10,63],[20,70],[30,70],[40,66],[45,50],[30,45],[28,41],[20,40],[15,38],[10,44],[3,43],[-5,36]],
+[[-5,50],[1,51],[-2,58],[-6,56]],
+[[-17,21],[-6,36],[10,37],[32,31],[43,12],[51,12],[40,-5],[40,-15],[32,-29],[20,-35],[12,-17],[9,4],[-8,4],[-17,14]],
+[[28,41],[36,36],[35,30],[43,12],[52,17],[57,24],[60,25],[72,20],[80,10],[92,22],[98,8],[100,13],[105,10],[108,20],[120,22],[122,30],[130,42],[140,52],[170,60],[180,68],[140,72],[100,77],[60,70],[40,66],[45,50]],
+[[130,31],[141,36],[142,44],[136,36]],
+[[114,-22],[130,-12],[142,-11],[153,-27],[146,-39],[135,-35],[115,-34]],
+[[172,-35],[178,-38],[172,-46],[166,-46]],
+[[95,5],[105,-6],[120,-9],[141,-3],[125,2],[110,2]]];
+const pins=[
+[1,30.5,50.4,'eu'],[2,-74,40.7,'am'],[3,84.9,19.3,'as'],[4,30.7,36.9,'me'],[5,4.35,50.85,'eu'],[6,23.6,50.6,'eu'],[7,24.7,59.4,'eu'],[8,-77,38.9,'am'],[9,44.2,32.9,'me'],[10,12.5,41.9,'eu'],[11,35.6,2.4,'af'],[12,77.2,28.6,'as'],[13,-53.8,-29.1,'am']];
+const briefs=[
+['eu','Kryvyi Rih','missile kills a boy, 7, and a medic','Kyiv Indep.',33.4,47.9],
+['eu','Lviv','strike on rail station kills two','Reuters',24.0,49.8],
+['eu','Berlin','pupils strike against military service','Euronews',13.4,52.5],
+['eu','Europe','shares slide as the AI trade unravels','Reuters',2.3,48.9],
+['me','Gaza','Israeli strikes kill 6 despite truce','AFP',34.4,31.5],
+['me','Lebanon','Israeli strikes hit four districts','Anadolu',35.9,33.9],
+['af','Nyala','Sudan army bombs RSF headquarters','Sudan Tribune',24.9,12.0],
+['af','Abuja','court rejects new evidence on Tinubu','BusinessDay',7.5,9.1],
+['af','Africa','AfDB: 22 states face debt distress','ThisDay',-2.0,6.0],
+['af','Malawi','fuel crisis brings all-night queues','Al Jazeera',35.0,-15.8],
+['as','Beijing','loan rates held for 18th month','Xinhua',116.4,39.9],
+['as','Tokyo','core inflation rises to 2.2%','CNBC',139.7,35.7],
+['as','Tokyo','SoftBank shares fall over 14%','Yahoo Fin.',143.5,40.5],
+['as','Seoul','Kospi ends the week 7.9% lower','Yahoo Fin.',127.0,37.6],
+['am','Washington','Trump defends his ties with Putin','CNN',-82,34],
+['am','Buenos Aires','country risk tops 1,000','BA Times',-58.4,-34.6],
+['am','Brasília','Bolsonaro taken to hospital','Reuters',-47.9,-15.8],
+['am','Mexico City','Sheinbaum leads Revolution parade','MND',-99.1,19.4],
+['am','Las Vegas','Russell fastest in final practice','The Race',-115.1,36.2],
+['oc','Wellington','New Zealand all out for 368 v India','AFP',174.8,-41.3],
+['oc','Sydney','severe storms lash eastern Australia','BoM',151.2,-33.9],
+['gl','Film','Hunger Games prequel: $21m in previews','Deadline',null,null]];
+const m=document.getElementById('map');let h='<rect width="300" height="146" fill="#1b2a44"/>';
+for(const g of land)h+='<polygon points="'+g.map(p=>P(p[0],p[1]).join(',')).join(' ')+'" fill="#d9cfb6"/>';
+const all=pins;
+const pts=all.map(p=>{const [x,y]=P(p[1],p[2]);return {n:p[0],c:p[3],x0:+x,y0:+y,x:+x,y:+y,r:7.2};});
+for(let it=0;it<400;it++){for(let i=0;i<pts.length;i++)for(let j=i+1;j<pts.length;j++){const A=pts[i],B=pts[j];let dx=B.x-A.x,dy=B.y-A.y;let d=Math.hypot(dx,dy)||0.01;const m=A.r+B.r+0.8;if(d<m){const f=(m-d)/2;dx/=d;dy/=d;A.x-=dx*f;A.y-=dy*f;B.x+=dx*f;B.y+=dy*f;}}
+for(const p of pts){p.x+=(p.x0-p.x)*0.02;p.y+=(p.y0-p.y)*0.02;p.x=Math.max(p.r,Math.min(300-p.r,p.x));p.y=Math.max(p.r,Math.min(146-p.r,p.y));}}
+for(const p of pts)if(Math.hypot(p.x-p.x0,p.y-p.y0)>2)h+='<line x1="'+p.x0+'" y1="'+p.y0+'" x2="'+p.x.toFixed(1)+'" y2="'+p.y.toFixed(1)+'" stroke="#fff" stroke-width=".6" opacity=".8"/><circle cx="'+p.x0+'" cy="'+p.y0+'" r="1.2" fill="#fff"/>';
+for(const p of pts.slice().reverse()){h+='<circle cx="'+p.x.toFixed(1)+'" cy="'+p.y.toFixed(1)+'" r="'+p.r+'" fill="'+(R[p.c]||'#555')+'" stroke="#fff" stroke-width="0.8"/><text x="'+p.x.toFixed(1)+'" y="'+(p.y+2.7).toFixed(1)+'" font-size="'+8+'" font-family="Segoe UI,Arial" font-weight="800" fill="#fff" text-anchor="middle">'+p.n+'</text>';}
+m.innerHTML=h;
+const cnt={};for(const r of pins.map(p=>p[3]).concat(briefs.map(b=>b[0])))cnt[r]=(cnt[r]||0)+1;
+const nm={eu:'Europe',me:'Middle East',af:'Africa',as:'Asia',am:'Americas',oc:'Oceania',gl:'Global'};
+document.getElementById('leg').innerHTML=Object.keys(nm).filter(k=>cnt[k]).map(k=>'<span class="'+k+'">■ '+nm[k]+' '+cnt[k]+'</span>').join('');
+document.querySelector('.also .hd').textContent='Also on Friday 20 November · '+briefs.length+' more';
+document.querySelector('.top span:last-child').textContent='World news · '+(13+briefs.length)+' stories · 6 continents · all from this Friday';
+const cs=['Reuters, Kyiv Independent','AP, Reuters, CNBC','IMD, The Hindu','Al Jazeera, DW','Reuters','Kyiv Independent','Reuters, Al Jazeera','CNBC, BBC','Al Jazeera, Asharq Al-Awsat','Reuters, Washington Post','Business Daily','Al Jazeera, DW','AFP'];
+document.querySelectorAll('.card').forEach((c,i)=>{const p=pins[i];const k=c.querySelector('.kick');const b=document.createElement('i');b.className='num';b.style.background=R[p[3]];b.textContent=p[0];k.prepend(b);if(i<3){const s=document.createElement('span');s.className='srcl';s.textContent=' · '+cs[i];k.appendChild(s);}else{const s=document.createElement('span');s.className='srcl';s.textContent=' · '+cs[i];c.querySelector('p').appendChild(s);}});
+document.getElementById('briefs').innerHTML=briefs.map((b,i)=>'<li><i style="background:'+(R[b[0]]||'#555')+'">'+(14+i)+'</i><b class="'+b[0]+'">'+b[1]+':</b> '+b[2]+' <span class="s">'+b[3]+'</span></li>').join('');
+</script>
 </body></html>
